@@ -10,34 +10,6 @@ YELLOW='\e[33m'
 BLUE='\e[34m'
 CYAN='\e[36m'
 RESET='\e[0m'
-
-# -------------------------
-# Animate Logo
-# -------------------------
-animate_logo() {
-  clear
-  local logo=(
-    "       _ _     _                 "
-    "      | (_)   | |                "
-    "      | |_ ___| |__  _ __  _   _ "
-    "  _   | | / __| '_ \| '_ \| | | |"
-    " | |__| | \__ \ | | | | | | |_| |"
-    "  \____/|_|___/_| |_|_| |_|__,_|  "
-  )
-  
-  for line in "${logo[@]}"; do
-    echo -e "${CYAN}${line}${RESET}"
-    sleep 0.2
-  done
-  echo ""
-  sleep 0.5
-}
-
-# -------------------------
-# Show Animated Logo
-# -------------------------
-animate_logo
-
 # -------------------------
 # Updating checking logs
 # -------------------------
